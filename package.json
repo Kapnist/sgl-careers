@@ -1,0 +1,18 @@
+{
+  "name": "sgl-careers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual, responsive concept redesign of the SGL Web Developer - IT Assistant job posting",
+  "scripts": {
+    "validate:html": "html-validate index.html fr.html",
+    "test": "playwright test",
+    "check": "npm run validate:html && npm test",
+    "serve": "http-server . -p 4173 -s -c-1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
+    "html-validate": "^9.0.0",
+    "http-server": "^14.1.1"
+  }
+}
