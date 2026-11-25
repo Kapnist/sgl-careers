@@ -26,7 +26,7 @@
       --teal-dark: #003F49;
       --navy: #1B4E67;
       --sky: #B2D7E4;
-      --green: #6C9536;
+      --green: #4A731D; /* 5.58:1 on white (WCAG AA) — was #6C9536, 3.51:1 */
       --green-bright: #84C225;
       --ink: #1d2a30;
       --muted: #55656d;
@@ -199,7 +199,7 @@
       transition: transform .15s, background .2s, box-shadow .2s;
     }
     .btn-primary { background: var(--green); color: #fff; box-shadow: 0 4px 12px rgba(108,149,54,.35); }
-    .btn-primary:hover { background: #5b8029; color: #fff; transform: translateY(-1px); }
+    .btn-primary:hover { filter: brightness(.88); color: #fff; transform: translateY(-1px); }
     .btn-ghost { background: #fff; color: var(--teal); border: 1px solid var(--line); margin-top: 10px; }
     .btn-ghost:hover { border-color: var(--teal); color: var(--teal-dark); }
     .btn img { width: 20px; height: 20px; }
@@ -239,6 +239,7 @@
     footer { background: var(--teal-dark); color: #bcd6df; font-size: .85rem; }
     footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 22px 0; padding-bottom: calc(22px + env(safe-area-inset-bottom)); }
     footer a { color: #fff; }
+    footer .disclaimer { flex-basis: 100%; margin: 0; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.15); font-size: .8rem; color: #bcd6df; }
 
     @media print {
       .topbar, .mobile-cta, .aside .side-links, .hero, .banner, footer { display: none !important; }
@@ -397,6 +398,7 @@
     <div class="wrap">
       <span>© Sander Geophysics Ltd. — mapping your potential</span>
       <a href="https://www.sgl.com/contactus.html">Contact us</a>
+      <p class="disclaimer">Concept redesign — not affiliated with SGL</p>
     </div>
   </footer>
 
