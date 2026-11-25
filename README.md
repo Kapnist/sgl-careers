@@ -7,7 +7,10 @@ Responsive, optimized redesign of the SGL job posting page
 
 ## Features
 
-- Single static page, no dependencies (inline CSS, ~10 lines of JS for the mobile menu)
+- **Bilingual EN / FR**: `index.html` (English) and `fr.html` (French, unofficial translation),
+  EN | FR switch in the header, `hreflang` links, French browsers redirected to `fr.html`
+  on first visit; the visitor's explicit choice is remembered
+- Static pages, no dependencies; shared `css/styles.css` and `js/main.js`
 - Fluid typography and spacing (`clamp()`), tested from 320px to 1920px
 - Mobile: hamburger menu, sticky "Apply by email" button, full-width touch targets (≥44px)
 - Tablet: sidebar cards in two columns; desktop: sticky apply sidebar
@@ -18,6 +21,6 @@ Responsive, optimized redesign of the SGL job posting page
 
 ## Usage
 
-Open `index.html` in a browser. Images are in `images/` (taken from the original site).
+Open `index.html` (English) or `fr.html` (French) in a browser. Images are in `images/` (taken from the original site).
 
 > Navigation links still point to the original www.sgl.com pages, which are not responsive.
