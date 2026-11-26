@@ -37,6 +37,8 @@ a:hover { color: var(--navy); }
 :focus-visible { outline: 3px solid var(--green-bright); outline-offset: 2px; border-radius: 4px; }
 .wrap { width: min(100% - 2 * clamp(12px, 4vw, 32px), var(--max)); margin-inline: auto; }
 @media (min-width: 1600px) { :root { --max: 1280px; } }
+/* Anchored sections (#apply, #main) land below the sticky header, not under it */
+[id] { scroll-margin-top: 76px; }
 .skip { position: absolute; left: -999px; top: 8px; background: var(--teal-dark); color: #fff; padding: 8px 14px; border-radius: 6px; z-index: 100; }
 .skip:focus { left: 8px; }
 
